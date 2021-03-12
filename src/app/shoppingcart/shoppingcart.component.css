@@ -1,7 +1,7 @@
 .header {
     
     background-color: #245846;
-    /*background-image: url("header.jpg");*/
+    background-image: url("header.jpeg");
     background-size: cover;
     height: 250px;
     opacity: 0.88;
@@ -9,6 +9,12 @@
  
  }
  
+.burger{
+    float: right;
+    margin-top: 20px;
+    color: white;
+}
+
  .title {
      padding-top: 30px;
      padding-left:20px;
