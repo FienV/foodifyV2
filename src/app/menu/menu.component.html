@@ -1,0 +1,317 @@
+<!-- header -->
+<div class="container-fluid">
+    <div class="row header">
+        <div class="col-md-12 header">
+            <div class="page-header">
+                <i class="fas fa-bars burger fa-2x"></i>
+                <h1 class="title" routerLink="restaurants">
+                    foodify
+                </h1>
+            </div>
+            <h3 class="name">
+                Naam restaurant
+            </h3>
+        </div>
+    </div>
+<!-- navbar menu -->
+    <div class="row">
+        <div class="col-md-12 px-4 mt-3">
+            <div class="navbar navbar-expand-lg navbar-light mb-4 flex-container">
+                <nav class="nav d-flex justify-content-between navtext">
+                    <a class="p-2 link-secondary black" href="#voorgerecht">Voorgerechten</a>
+                    <a class="p-2 link-secondary black" href="#hoofdgerecht">Hoofdgerechten</a>
+                    <a class="p-2 link-secondary black" href="#bijgerecht">Bijgerechten</a>
+                    <a class="p-2 link-secondary black" href="#vegan">Vegan</a>
+                    <a class="p-2 link-secondary black" href="#nagerecht">Nagerechten</a>
+                </nav>
+            </div>
+            <button routerLink="shoppingcart" class="btn shoppingcart"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+    <!-- voorgerechten -->
+    <div id="voorgerecht">
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <img class="card-img-top img-fluid mb-2" src="assets/voorgerecht.jpg" style="opacity: 0.7;">
+                            <h4 class="card-text"><b>Voorgerechten</b></h4>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody *ngFor="let dish of dishes | async">
+                            <h5>{{dish.name}}</h5>
+                            <p>Allergies</p>
+                            <h3>{{dish.price}}</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Voorgerecht 2</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Voorgerecht 3</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hoofdgerechten -->
+    <div id="hoofdgerecht">
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <img class="card-img-top mb-2" src="assets/hoofdgerecht.jpg" style="opacity: 0.7;">
+                            <h4 class="card-text">Hoofdgerechten</h4>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Hoofdgerecht 1</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Hoofdgerecht 2</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Hoofdgerecht 3</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bijgerechten -->
+    <div id="bijgerecht">
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <img class="card-img-top mb-2" src="assets/bijgerecht.jpg" style="opacity: 0.7;">
+                            <h4 class="card-text">Bijgerechten</h4>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Bijgerecht 1</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Bijgerecht 2</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Bijgerecht 3</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- vegan -->
+    <div id="vegan">
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <img class="card-img-top mb-2" src="assets/vegan.jpg" style="opacity: 0.7;">
+                            <h4 class="card-text">Vegan</h4>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Vegan gerecht 1</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Vegan gerecht 2</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Vegan gerecht 3</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- nagerechten -->
+    <div id="nagerecht">
+        <div id="nagerecht" class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <img class="card-img-top mb-2" src="assets/nagerecht.jpg" style="opacity: 0.7;">
+                            <h4 class="card-text">Nagerechten</h4>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Nagerecht 1</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Naerecht 2</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1 rounded">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tbody>
+                            <h5>Nagerecht 3</h5>
+                            <p>Allergies</p>
+                            <h3>€ 10</h3>
+                        </tbody>
+                    </table>
+                    <button class="btn shoppingcart"><i class="fas fa-shopping-cart p-3"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
