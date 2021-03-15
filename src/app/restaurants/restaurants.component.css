@@ -3,14 +3,13 @@ body {
     font-weight: lighter;
 }
 
-.headimg {
-    height: 150px;
-    min-height: 150px;
-    /*background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg");*/
+.header {
+    background-color: #245846;
+    background-image: url("header.jpeg");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    height: 250px;
+    opacity: 0.88;
+}
 
 .imagetext {
     min-height: 20%;
@@ -72,4 +71,9 @@ h2 {
 
 .bottom{
     bottom:0;
+}
+
+/* foto's resto's */
+.img-fluid {
+    max-width: 35% !important;
 }

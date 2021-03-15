@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { RestaurantsService } from '../shared/services/restaurants.service'
+import { Observable } from 'rxjs';
+import { Restaurant } from '../shared/model/restaurants.model'
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
   styleUrls: ['./restaurants.component.css']
 })
-export class RestaurantsComponent implements OnInit {
 
-  constructor() { }
+export class RestaurantsComponent implements OnInit {
+  restaurantName:string;
+  restaurants$: Observable<Restaurant[]>
+
+  constructor(private restaurantService: RestaurantsService) { }
 
   ngOnInit(): void {
+  }
+
+  retrieveRestaurants () {
+
   }
 
 }
