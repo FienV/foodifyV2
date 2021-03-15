@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class RestaurantsComponent implements OnInit {
-  restaurantName:string;
+  resto_name: string;
   restaurants$: Observable<Restaurant[]>
 
   constructor(private restaurantService: RestaurantsService) { }
@@ -19,8 +19,12 @@ export class RestaurantsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  retrieveRestaurants () {
+  showAllRestaurants () {
+    this.restaurantService.showAllRestaurants();
+    }
 
-  }
+  searchRestaurants() {
+    this.restaurants$ = this.restaurantService.searchRestaurants(this.resto_name);
+  }  
 
 }

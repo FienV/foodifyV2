@@ -19,7 +19,8 @@
         <div class="row">
             <div class="col-md-12 px-4 mt-3">
                 <div class="form-outline">
-                    <input type="search" id="form1" class="form-control rounded-pill" placeholder="adres"/>
+                    <input type="text" [(ngModel)]="resto_name" id="form1" class="form-control rounded-pill" placeholder="stad"/>
+                    <button (click)="searchRestaurants()" class="btn btn-secondary greenbutton">Zoek</button>
                 </div>
                 <!-- menu type eten -->
                 <div class="navbar navbar-expand-lg navbar-light mb-4 flex-container">
@@ -45,7 +46,7 @@
                                 <img src="assets/resto1.jpeg" class="img-fluid" alt="resto1">
                             </td>
                             <td *ngFor="let restaurant of restaurants$ | async" class="tabeltext">
-                                <h2 class="mt-2" >{{restaurant.Name}}</h2>
+                                <h2 class="mt-2">{{ restaurants.Resto_name }}</h2>
                                 <p style="margin-bottom: 25%;">Italiaans, à la carte</p>
                                 <span><i class="far fa-star"></i></span>
                                 <span><i class="far fa-star"></i></span>
