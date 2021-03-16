@@ -1,5 +1,5 @@
 body {
-    /*background-image: url("welcome.jpg");*/
+    background-image: url("welcomecopy.jpg");
     background-position: center;
     background-attachment: fixed;
     width: 100%;
@@ -13,13 +13,24 @@ body {
 h1 {
     text-align: center;
     margin-top: 400px;
+    margin-bottom: 150px;
     position: center;
     font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: 60px;
+    font-weight: lighter;
+    color: white;
+    font-size: 82px;
 }
 
 .button {
     border-radius: 20px;
     text-align: center;
+    margin: 5px;
+    margin-bottom: 200px;
+
+}
+
+.welcome {
+    background-image: url("welcomecopy.jpg");
+    background-size: cover;
+    opacity: 0.85;
 }
