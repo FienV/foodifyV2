@@ -23,8 +23,9 @@ export class RestaurantsComponent implements OnInit {
     this.restaurantService.showAllRestaurants();
     }
 
-  searchRestaurants() {
+  /* join clientCity & restoCity? */ 
+  /* searchRestaurants() {
     this.restaurants$ = this.restaurantService.searchRestaurants(this.resto_name);
-  }  
+  }  */
 
 }
