@@ -10,15 +10,12 @@ import { tap } from 'rxjs/operators';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
-dishes: Dish [];
-
+dishes$: Observable<Dish[]>;
 
   constructor(private menuService: MenuService) {}
 
   ngOnInit(): void {
-    this.menuService.getDishes().subscribe(data => {
-      this.dishes = data ['dishes'][0];
-    });
+    this.dishes$ = this.menuService.getDishes();
   }
+
 }

@@ -19,11 +19,9 @@ export class MenuService {
     this.url = 'http://syntra.terugsamen.be/theblackwindows/public/api/dishes';
   }
   
-  getDishes() {
-    return this.http.get(this.url);
+  getDishes(): Observable<Dish[]> {
+    return this.http.get<Dish[]>(this.url);
   }
-  //Observable<any> {
-    //return this.http.get<any>(this.url)
-    //.pipe()
-      //}
+
+
   }
