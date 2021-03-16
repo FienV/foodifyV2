@@ -11,6 +11,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { RegisterClientComponent } from './register-client/register-client.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     ShoppingcartComponent,
     WelcomeComponent,
     RestaurantsComponent,
-    MenuComponent
+    MenuComponent,
+    RegisterClientComponent
   ],
   imports: [
     BrowserModule,

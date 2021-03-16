@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: black;
-    /*background-image: url("welcome.jpg");*/
+    background-image: url("welcomecopy.jpg");
     background-position: center;
     background-attachment: fixed;
     width: 100%;
@@ -21,27 +21,53 @@ body {
 .button {
     border-radius: 20px;
     text-align: center;
+    margin: 5px;
 }
 
 .vak {
     font-family: 'Poppins', sans-serif;
     border-radius: 20px;
+    margin:auto;
+    max-width: 500px;
     border: none;
 }
 
 .voorwaarden {
     font-size: 11px;
+    color: white;
+    margin:auto;
 }
 
 .login {
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin: 15px;
 }
 
-.restaurant {
-    text-decoration: underline;
-    color: rgba(8, 66, 28, 0.575);
-    margin-top: 150px;
-    text-align: center
+.welkomlogin {
+    background-image: url(welcomecopy.jpg);
+    background-size:cover;
+    opacity: 0.7;
+}
+.h1 {
+    margin-bottom: 50px;
 
+}
+
+.sterretje {
+    margin: 25px;
+}
+
+.form-check {
+    text-align: center;
+    margin: auto;
+}
+
+.subtekst {
+    text-align: center;
+    margin-top: 35px;
+    color:white;
+}
+.p {
+    text-decoration: underline;
 }
