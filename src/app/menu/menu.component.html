@@ -4,7 +4,7 @@
         <div class="col-md-12 header">
             <div class="page-header">
                 <i class="fas fa-bars burger fa-2x"></i>
-                <h1 class="title" routerLink="/restaurants">
+                <h1 class="title">
                     foodify
                 </h1>
             </div>
@@ -16,15 +16,6 @@
 <!-- navbar menu -->
     <div class="row">
         <div class="col-md-12 px-4 mt-3">
-            <div class="navbar navbar-expand-lg navbar-light mb-4 flex-container">
-                <nav class="nav d-flex justify-content-between navtext">
-                    <a class="p-2 link-secondary black" href="#voorgerecht">Voorgerechten</a>
-                    <a class="p-2 link-secondary black" href="#hoofdgerecht">Hoofdgerechten</a>
-                    <a class="p-2 link-secondary black" href="#bijgerecht">Bijgerechten</a>
-                    <a class="p-2 link-secondary black" href="#vegan">Vegan</a>
-                    <a class="p-2 link-secondary black" href="#nagerecht">Nagerechten</a>
-                </nav>
-            </div>
             <button routerLink="/shoppingcart" class="btn shoppingcart"><i class="fas fa-shopping-cart"></i></button>
         </div>
     </div>
@@ -46,7 +37,7 @@
             <div class="row">
                 <div class="col-12">
                     <table>
-                        <tbody *ngFor="let dish of dishes">
+                        <tbody *ngFor="let dish of dishes$">
                             <h5>{{dish.name}}</h5>
                             <p>Allergies</p>
                             <h3>{{dish.price}}</h3>

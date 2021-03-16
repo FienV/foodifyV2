@@ -1,4 +1,4 @@
 export interface Dish {
-    name: string;
-    price: number;
+    Name: string;
+    Price: number;
 }
