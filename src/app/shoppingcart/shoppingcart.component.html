@@ -2,14 +2,13 @@
 <div class="container-fluid">
     <div class="row header">
         <div class="col-md-12 header">
-            <div class="page-header">
-                <i class="fas fa-bars burger fa-2x"></i>
-                <h1 class="title" routerLink="restaurants">
-                    foodify
-                </h1>
+            <div class="page-header">              
+                <button class= "headerbtn" onclick="window.location.href='http://syntra.terugsamen.be/theblackwindows/public/api/welkom'">
+                    <h1 class="title"> foodify </h1>
+                </button>
             </div>
             <h3 class="name">
-               restonaam <!--{{restaurant.name}}-->
+               {{restonaam}}
             </h3>
         </div>
     </div>
@@ -33,26 +32,26 @@
             <div class="cart-single-meal">
                 <div class="cart-row ">
                     <div class="col-md-1 cart-meal-amount">
-                        1x
+                        {{amount}}
                     </div>
                     <div class="col-md-6 cart-meal-name">
-                       pastavongole <!--{{dish.name}} -->
+                       {{dish}}
                     </div>
                     <div class="col-md-3 cart-meal-edit-buttons">
 
-                        <button class="btn btn-success cart-meal-edit-delete"> - </button>
-                        <button class=" btn btn-success cart-meal-edit-add"> + </button>
-                        <button class=" btn btn-success cart-meal-edit-comment">
+                        <button class="btn btn-success cart-meal-edit-delete" (click) = "reduce(amount)"> - </button>
+                        <button class=" btn btn-success cart-meal-edit-add"(click) ="add(amount)"> + </button>
+                        <button class=" btn btn-success cart-meal-edit-comment" (click)="onDelete(dish)" > 
                             <i class="fas fa-trash-alt"></i>
                         </button>
                     </div>
                     <div class="col-md-2 cart-meal-price">
-                        €18,00
+                        € {{price}}
                     </div>
 
                 </div><br>
                 <div class="cart-row cart-meal-extra">
-                    opmerkingen komen hier te staan
+                   <input class=remark type="string" placeholder="opmerkingen">
                 </div>
 
             </div>
@@ -66,15 +65,15 @@
         <div class="sum">
             <div class="cart-row subtotal-row">
                 <span class="cart-sum-name">subtotaal</span>
-                <span class="cart-sum-price">€18</span>
+                <span class="cart-sum-price">€ {{subtotal}} </span>
             </div>
             <div class="cart-row delivery-costs-row">
                 <span class="cart-sum-name">Bezorgkosten</span>
-                <span class="cart-sum-price">€ 4</span>
+                <span class="cart-sum-price" >€ {{deliverycost}} </span>
             </div>
             <div class="cart-row total-cost-row total">
                 <span class="cart-sum-name ">Totaal</span>
-                <span class="cart-sum-price">€22</span>
+                <span class="cart-sum-price">€ {{total}}</span>
             </div>
 
 
@@ -85,7 +84,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <button type="button" class="btn btn-success btn-add">
+            <button type="button" class="btn btn-success btn-add" onclick="window.location.href='http://syntra.terugsamen.be/theblackwindows/public/api/dishes'">
                 Producten toevoegen
             </button>
             <button type="button" class="btn btn-success btn-pay ">
