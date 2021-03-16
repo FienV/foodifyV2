@@ -11,7 +11,9 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     ShoppingcartComponent,
-    MenuComponent
+
+    MenuComponent,
+
   ],
   imports: [
     BrowserModule,
