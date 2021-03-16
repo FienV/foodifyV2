@@ -1,0 +1,61 @@
+.header {
+    
+    background-color: #245846;
+    background-image: url("header.jpeg");
+    background-size: cover;
+    height: 250px;
+    opacity: 0.88;
+    
+  }
+  
+  .foodify-btn{
+     background-color: #245846;
+     border-radius: 20px;
+     border: none;
+     padding: 10px;
+     text-align: center;
+     margin-top:20px;
+     margin-right: 10px;
+  }
+  
+  .title {
+     text-align: center; 
+     color: white;
+     font-weight: bold;
+  }
+  
+  .name {
+     padding-top:30px;
+     text-align: center;
+     padding-bottom: 40px;
+     color: white;
+  }
+  
+  
+  
+  
+  .fa-shopping-cart{
+    color: white;
+    margin-top: 10px;
+    
+  }
+  
+  .btn {
+    background-color: #245846;
+    margin-top: 10px;
+    margin-right: 3%;
+    float: right;
+    padding: 5px 10px;
+    text-align: center;
+  
+  }
+  
+.fa-chevron-circle-left{
+   margin-top: 10px;
+   color: #245846;
+}
+.back-btn {
+    border:none;
+    background-color: white;
+    color:none;
+}

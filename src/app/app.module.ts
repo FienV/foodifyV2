@@ -6,6 +6,14 @@ import { AppComponent } from './app.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { Routes } from '@angular/router';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { OrderComponent } from './order/order.component';
+import { PaymentComponent } from './payment/payment.component';
+import { AffirmationComponent } from './affirmation/affirmation.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -13,6 +21,15 @@ import { FormsModule } from '@angular/forms';
     ShoppingcartComponent,
 
     MenuComponent,
+
+    WelcomeComponent,
+
+    OrderComponent,
+
+    PaymentComponent,
+
+    AffirmationComponent,
+
 
   ],
   imports: [
@@ -25,3 +42,4 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

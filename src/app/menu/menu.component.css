@@ -1,86 +1,51 @@
-body {
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: lighter;
-  }
+.header {
+    
+  background-color: #245846;
+  background-image: url("header.jpeg");
+  background-size: cover;
+  height: 250px;
+  opacity: 0.88;
   
-  .navtext {
-    font-size: 9pt;
-  }
-  
-  .flex-container {
-    display: flex;
-    justify-content: center;
-  
-  }
-  
-  .black {
-    color: black;
-  }
-  
-  .black:hover {
-    color: white;
-    background-color: #245846;
-    text-decoration: none;
-    border-radius: 7px;
-  }
-  
-  .fa, .fas {
-    font-size: 30px;
-    color: #245846;
-  }
-   .card-text {
-     text-align: center;
-   }
-  
-   button {
-     border:0px;
-     background-color: white;
-     float: right;
-   }
-  
-   h2 {
-     font-size: 20px !important;
-   }
-  
-   h4 {
-     font-size: 30px !important;
-   }
-  
-   h3 {
-     font-size: 20px !important;
-   }
-
-
-   .header {
-    background-color: #245846;
-    background-image: url("header.jpeg");
-    background-size: cover;
-    height: 250px;
-    opacity: 0.88;
 }
- .burger{
-    float: right;
-    margin-top: 20px;
-    color: white;
+
+.foodify-btn{
+   background-color: #245846;
+   border-radius: 20px;
+   border: none;
+   padding: 10px;
+   text-align: center;
+   margin-top:20px;
+   margin-right: 10px;
 }
+
 .title {
-    padding-top: 30px;
-    padding-left:20px;
-    padding-bottom: 10px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+   text-align: center; 
+   color: white;
+   font-weight: bold;
 }
+
 .name {
-    padding-top:30px;
-    padding-left: 20px;
-    padding-bottom: 40px;
-    color: white;
+   padding-top:30px;
+   text-align: center;
+   padding-bottom: 40px;
+   color: white;
 }
 
-html {
-  scroll-behavior: smooth;
+
+
+
+.fa-shopping-cart{
+  color: white;
+  margin-top: 10px;
+  
 }
 
-.shoppingcart {
+.btn {
+  background-color: #245846;
+  margin-top: 10px;
+  margin-right: 3%;
   float: right;
+  padding: 5px 10px;
+  text-align: center;
+
 }

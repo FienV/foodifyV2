@@ -1,25 +1,43 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+  
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
 .header {
     
     background-color: #245846;
-    /*background-image: url("header.jpg");*/
+    background-image: url("header.jpeg");
     background-size: cover;
     height: 250px;
     opacity: 0.88;
     
- 
  }
  
+ .foodify-btn{
+     background-color: #245846;
+     border-radius: 20px;
+     border: none;
+     padding: 10px;
+     text-align: center;
+     margin-top:20px;
+     margin-right: 10px;
+ }
+
  .title {
-     padding-top: 30px;
-     padding-left:20px;
-     padding-bottom: 10px;
-     color: rgb(0, 0, 0);
+     text-align: center; 
+     color: white;
      font-weight: bold;
  }
  
  .name {
      padding-top:30px;
-     padding-left: 20px;
+     text-align: center;
      padding-bottom: 40px;
      color: white;
  }
@@ -138,8 +156,26 @@
      color: black;
      font-weight: bold;
  }
+
+ .fa-chevron-circle-left{
+    margin-top: 10px;
+    color: #245846;
+ }
+ .back-btn {
+     border:none;
+     background-color: white;
+     color:none;
+ }
+
+ .fa-shopping-cart{
+    color: #245846;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5%;
+    
+ }
   
- @media only screen and (max-width:1180px) {
+@media only screen and (max-width:1180px) {
      
      .cart-meal-edit-buttons{
          float:none;
@@ -186,9 +222,9 @@
          width: 100%;
      }
      
- }
+}
  
- @media only screen and (max-width:415px) {
+@media only screen and (max-width:415px) {
     .cart-meal-name{
        min-width: 70%;
        margin-right: 2px;
