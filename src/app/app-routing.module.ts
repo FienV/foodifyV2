@@ -10,10 +10,7 @@ import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo:'welcome', pathMatch: 'full'
-  },
-  {
-    path: 'welcome', component: WelcomeComponent
+    path: '', component: WelcomeComponent
   }, {
     path: 'login-client', component: LoginClientComponent
   }, {
