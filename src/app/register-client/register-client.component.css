@@ -16,6 +16,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color:rgb(78, 75, 75);
     margin-top: 300px;
+    position: center;
 }
 
 .button {
@@ -26,47 +27,24 @@ body {
 .vak {
     font-family: 'Poppins', sans-serif;
     border-radius: 20px;
-    margin:auto;
     max-width: 500px;
+    margin:auto;
     border: none;
 }
 
 .voorwaarden {
     font-size: 11px;
     color: white;
+    margin:auto;
 }
 
-.login {
+.register {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 10px;
 }
 
-.subtekst {
-    text-decoration: underline;
-    color: white;
-    margin-top: 150px;
-    text-align: center;
-}
-
-h1 {
-    text-decoration: bold;
-    font-size: 40px;
-    text-align: center;
-}
-
-p {
-    line-height: 3px;
-    font-size: 13px;
-    text-align: center;
-}
-
-.opmerkingen {
-    height: 80px;
-    text-align: left;
-}
-
-.welkomlogin {
+.welkomregister {
     background-image: url(welcomecopy.jpg);
     background-size:cover;
     opacity: 0.7;
@@ -76,3 +54,4 @@ p {
     text-align: center;
     margin: auto;
 }
+
