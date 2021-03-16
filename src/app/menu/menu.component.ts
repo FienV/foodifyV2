@@ -10,16 +10,15 @@ import { tap } from 'rxjs/operators';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-dishes: Array <Dish> = [];
-showDish: Dish;
+
+dishes: Dish [];
+
 
   constructor(private menuService: MenuService) {}
-  retrieveAllDishes() {
-    this.menuService.retrieveAllDishes()
-          .subscribe ();
-  }
 
   ngOnInit(): void {
+    this.menuService.getDishes().subscribe(data => {
+      this.dishes = data ['dishes'][0];
+    });
   }
-
 }
