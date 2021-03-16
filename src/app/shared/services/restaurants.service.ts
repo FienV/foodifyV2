@@ -20,10 +20,11 @@ export class RestaurantsService {
       .pipe()
   }
 
-  searchRestaurants(keyword):Observable<Restaurant[]> {
+  /* join met restaurantCity en clientCity?? */ 
+   /* searchRestaurants(keyword):Observable<Restaurant[]> {
     return this.http.get<Restaurant[]>(this.url +`s=${keyword}`)
-    .pipe(map(res => res['Search']))
+    .pipe(map(res => res['Search'])) 
 
-  }
+  } */
 
 }
