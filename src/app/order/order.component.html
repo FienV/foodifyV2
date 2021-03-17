@@ -20,15 +20,35 @@
 
 
     <div class="col-md-12 titels ">
-        <h1>uw Bestelling </h1>
+        <h1>Uw bestelling </h1>
     </div>
 
-    <div class="order">
-        <span> aantal personen, menu, resto, prijs, totaalprijs </span>
+    <div class="order table">
+        <table >
+            
+            
+            <tr>
+                <td>
+                    amount
+                </td>
+                <td>
+                    resto
+                </td>
+                <td>
+                   dishes
+                </td>
+                
+                <td>
+                   € total
+                </td>
+            </tr>
+         
+        </table>
+       
     </div>
 
     <div class="col-md-12 titels">
-        <h1>uw contactgegevens </h1>
+        <h1>Uw contactgegevens </h1>
 
     </div>
 
@@ -37,7 +57,7 @@
             <form>
                 <div>
 
-                    <input type="firstname" placeholder="voornaam">
+                    <input  [(ngModel)]="addName" type="firstname" placeholder="voornaam">
                 </div>
                 <div>
 
