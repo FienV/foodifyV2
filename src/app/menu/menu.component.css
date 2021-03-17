@@ -31,8 +31,14 @@
    color: white;
 }
 
-
-
+.greenbutton {
+  background-color: #245846;
+  border-radius: 1rem !important;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 40%;
+}
 
 .fa-shopping-cart{
   color: white;
@@ -40,12 +46,28 @@
   
 }
 
-.btn {
+.sbtn {
   background-color: #245846;
   margin-top: 10px;
   margin-right: 3%;
   float: right;
   padding: 5px 10px;
   text-align: center;
-
 }
+
+.rounded {
+  border-radius: 1rem !important;
+}
+
+.menutext {   
+  font-weight: lighter;
+  font-size: 18px;
+  padding-left: 14px;
+  vertical-align: top;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+

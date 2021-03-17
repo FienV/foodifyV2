@@ -18,8 +18,58 @@
 <!-- navbar menu -->
     <div class="row">
         <div class="col-md-12 px-4 mt-3 ">
-            <button routerLink="/shoppingcart" class="btn shoppingcart"><i class="fas fa-shopping-cart fa-2x"></i></button>
+            <button routerLink="/shoppingcart" class="btn sbtn shoppingcart"><i class="fas fa-shopping-cart fa-2x"></i></button>
         </div>
     </div>
-    
+</div>
+<!-- menu's -->
+<div class="container-fluid px-5">
+    <div class="row mb-4">
+		<div class="col-md-12 text-center">
+            <p style="font-weight: bold; font-size: 30px;">Menu's</p>
+            <p style="font-weight: lighter; font-size: 18px;">Maak een keuze uit één van onze wekelijkse menu's!</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+            <div class="card rounded mb-4">
+                <img class="card-img-top" src="assets/menu1.jpeg">
+                <table class="card-table my-3 mx-2">
+                    <tbody>
+                        <tr>
+                            <th class="menutext bold">Pasta menu</th>
+                            <th class="menutext bold">€30</th>
+                        </tr>
+                        <tr>
+                            <td class="menutext">Restaurant naam</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                <div class="text-center">                
+                    <button routerLink="/order" class="btn btn-secondary greenbutton mb-3" type="button">
+                    meer info</button>  
+                </div>
+            </div>    
+		</div>
+		<div class="col-md-6">
+            <div class="card rounded mb-4">
+                <img class="card-img-top" src="assets/menu2.jpeg">
+                <table class="card-table my-3 mx-2">
+                    <tbody>
+                        <tr>
+                            <th class="menutext bold">Tapas menu</th>
+                            <th class="menutext bold">€35</th>
+                        </tr>
+                        <tr>
+                            <td class="menutext">Restaurant naam</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                <div class="text-center">                
+                    <button routerLink="/order" class="btn btn-secondary greenbutton mb-3" type="button">
+                    meer info</button>  
+                </div>
+            </div>    
+		</div>
+	</div>
 </div>
