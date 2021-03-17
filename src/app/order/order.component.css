@@ -59,3 +59,38 @@
     background-color: white;
     color:none;
 }
+
+
+form {
+   text-align: center;
+   
+ 
+}
+
+
+
+input {
+   width: 100%;
+   border-radius: 10px;
+   height: 30px;
+   margin-top:10px;
+   margin-bottom: 10px;
+   
+  
+ }
+
+ 
+ .order {
+   margin: auto;
+   width: 70%;
+   border:  solid #245846;
+   border-radius: 10px;
+   background-color: #245846;
+   padding: 10px;
+   color: white;
+ }
+
+ .titels {
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
