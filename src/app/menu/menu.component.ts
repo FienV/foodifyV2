@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Dish } from '../shared/model/menu.model';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
+import { ActivatedRoute } from '@angular/router';
 import { ShoppingcartService } from '../shared/services/shoppingcart.service';
 
 @Component({
@@ -14,7 +15,7 @@ import { ShoppingcartService } from '../shared/services/shoppingcart.service';
 export class MenuComponent implements OnInit {
 dishes$: Observable<any>;
 
-  constructor(private menuService: MenuService, private shoppingcartService: ShoppingcartService) {}
+  constructor(private menuService: MenuService, private shoppingcartService: ShoppingcartService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.dishes$ = this.menuService.getDishes();
@@ -22,6 +23,6 @@ dishes$: Observable<any>;
 
   addToShoppingcart(dishes) {
     this.shoppingcartService.addToShoppingcart(dishes);
-    window.alert('Your product has been added to the cart!');
+    window.alert ('Your product has been added to the cart!')
   }
 }
