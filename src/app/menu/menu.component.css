@@ -37,7 +37,7 @@
   font-size: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 40%;
+  width: 25%;
 }
 
 .fa-shopping-cart{
@@ -67,8 +67,12 @@
 }
 
 .bold {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: bolder;
+  font-size: 28px;
+  color: #245846;
+  padding-bottom: 10px;
 }
 
-
+.price {
+  width: 16%;
+}
