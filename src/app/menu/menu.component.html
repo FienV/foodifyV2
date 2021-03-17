@@ -31,19 +31,17 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12" style="padding-left: 100px; padding-right: 100px;">
             <div class="card rounded mb-4" *ngFor="let dish of dishes$ | async" >
                 <img class="card-img-top" src="assets/menu1.jpeg">
                 <table class="card-table my-3 mx-2">
                     <tbody>
                         <tr>
                             <th class="menutext bold">{{dish.name}}</th>
-                            <th class="menutext bold">€ {{dish.price}}</th>
-                            
+                            <th class="menutext bold price">€ {{dish.price}}</th>
                         </tr>
                         <tr>
-                            <td class="menutext">{{dish.resto_name}}</td>
-                            
+                            <td class="menutext" style="font-weight: bold; font-size: 20px;">{{dish.resto_name}}</td>
                         </tr>
                         <tr>
                             <td class="menutext">{{dish.inhoud}}</td>

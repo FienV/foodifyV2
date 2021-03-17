@@ -11,28 +11,31 @@
             </div>
 
             <h2 class="name">
-                resto naam
-                <!--{{restorant.name}}-->
+                Kies uw betaalmethode
             </h2>
         </div>
     </div>
-    
+
 
 </div>
 
 <button routerLink="/shoppingcart" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x"></i></button>
+<div class="button">
+    <button type="button" class="btn btn-success btn-pay " routerLink="/affirmation">
+        <i class="far fa-credit-card fa-5x"></i>
 
-<button type="button" class="btn btn-success btn-pay "   routerLink="/affirmation">
-    <i class="far fa-credit-card" ></i>
-    
- </button>
- <button type="button" class="btn btn-success btn-pay "   routerLink="/affirmation">
-    <i class="fab fa-paypal"></i>
-    
- </button>
- <button type="button" class="btn btn-success btn-pay "   routerLink="/affirmation">
-    <i class="fab fa-cc-visa"></i>
-    
- </button>
+    </button>
 
-   
+    <button type="button" class="btn btn-success btn-pay " routerLink="/affirmation">
+        <i class="fab fa-cc-visa fa-5x"></i>
+
+    </button>
+
+    <button type="button" class="btn btn-success btn-pay " routerLink="/affirmation">
+        <i class="fab fa-google-pay fa-5x"></i>
+    </button>
+
+    <button type="button" class="btn btn-success btn-pay " routerLink="/affirmation">
+        <i class="fab fa-apple-pay fa-5x"></i>
+    </button>
+</div>

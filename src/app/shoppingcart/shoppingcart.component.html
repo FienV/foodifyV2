@@ -37,6 +37,7 @@
                     <input type='number' placeholder='Aantal stuks' class="col-md-1 mx-3 cart-meal-amount">
                     <div class="col-md-6 cart-meal-name">
                         {{dishes | json}}
+
                     </div>
                     <div class="col-md-3 cart-meal-edit-buttons">
                         <button *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' class=" btn btn-success cart-meal-edit-comment">
@@ -49,7 +50,6 @@
 
                 </div><br>
         
-
             </div>
         </div>
 

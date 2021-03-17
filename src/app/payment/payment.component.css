@@ -42,14 +42,18 @@
   
   .btn {
     background-color: #245846;
+    border-radius: 10px;
     margin-top: 10px;
     margin-right: 3%;
-    float: right;
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-align: center;
-  
+    width: 40%;
   }
   
+  .button{
+   text-align: center;
+  }
+
 .fa-chevron-circle-left{
    margin-top: 10px;
    color: #245846;
@@ -59,3 +63,4 @@
     background-color: white;
     color:none;
 }
+

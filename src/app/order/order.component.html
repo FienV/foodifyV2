@@ -16,18 +16,77 @@
         </div>
     </div>
 
-    <div class="col-md-12">
-        uw Bestelling >>>> blaablalalbalblal
-    </div>    
-    
-    <input type="firstname" placeholder="voornaam"> 
-    <input type="name" placeholder="naam"> 
-    <input type="email" placeholder="email"> 
-    <input type="adress" placeholder="adres"> 
-    <input type="phonenumber" placeholder="telefoonnummer"> 
+
+
+    <div class="col-md-12 titels ">
+        <h1>Uw bestelling </h1>
+    </div>
+
+    <div class="order table">
+        <table >
+            
+            
+            <tr>
+                <td>
+                    amount
+                </td>
+                <td>
+                    resto
+                </td>
+                <td>
+                   dishes
+                </td>
+                
+                <td>
+                   € total
+                </td>
+            </tr>
+         
+        </table>
+       
+    </div>
+
+    <div class="col-md-12 titels">
+        <h1>Uw contactgegevens </h1>
+
+    </div>
+
+    <div class="col-md-12  order ">
+        
+            <form>
+                <div>
+
+                    <input  [(ngModel)]="addName" type="firstname" placeholder="voornaam">
+                </div>
+                <div>
+
+                    <input type="name" placeholder="naam">
+                </div>
+                <div>
+
+                    <input type="address" placeholder="adres">
+                </div>
+                <div>
+
+
+                    <input type="phonenumber" placeholder="telefoonnummer">
+                </div>
+                <div>
+
+                    <input type="email" placeholder="email">
+                </div>
+                <div>
+
+                    <input type="date" placeholder="datum">
+                </div>
+
+            </form>
+        
+    </div>
 
 </div>
+
 <button routerLink="/shoppingcart" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x"></i></button>
-<button type="button" class="btn btn-success btn-pay "   routerLink="/payment">
-   pay
+<button type="button" class="btn btn-success btn-pay " routerLink="/payment">
+    pay
 </button>
