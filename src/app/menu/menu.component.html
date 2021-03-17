@@ -39,15 +39,20 @@
                         <tr>
                             <th class="menutext bold">{{dish.name}}</th>
                             <th class="menutext bold">€ {{dish.price}}</th>
+                            
                         </tr>
                         <tr>
                             <td class="menutext">{{dish.resto_name}}</td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="menutext">{{dish.inhoud}}</td>
                         </tr>
                     </tbody>
                 </table>   
                 <div class="text-center">                
-                    <button routerLink="/order" class="btn btn-secondary greenbutton mb-3" type="button">
-                    meer info</button>  
+                    <button (click)="addToShoppingcart(dishes)" routerLink="/shoppingcart" class="btn btn-secondary greenbutton mb-3" type="button">
+                    Bestel</button>  
                 </div>
             </div>    
 		</div>
