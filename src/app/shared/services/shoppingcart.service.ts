@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Dish } from '../model/menu.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ export class ShoppingcartService {
 
   addToShoppingcart(dishes) {
     this.dishes.push(dishes);
+    
   }
 
   getDishes () {
