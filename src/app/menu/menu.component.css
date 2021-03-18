@@ -40,11 +40,7 @@
   width: 25%;
 }
 
-.fa-shopping-cart{
-  color: white;
-  margin-top: 10px;
-  
-}
+
 
 .sbtn {
   background-color: #245846;
@@ -75,4 +71,43 @@
 
 .price {
   width: 16%;
+}
+
+.menu {
+  width:70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.h1 {
+  font-size: 18px;
+}
+
+@media (max-width: 850px) {
+  .menu {
+    width:100%;
+    margin-left:0px;
+  }
+
+  .dishname {
+    width: 70%;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    width: 30%;
+    font-size: 25px;
+  }
+
+  .restoname {
+   font-weight: 100;
+   font-style: italic;
+
+  }
+  .greenbutton {
+    
+    width: 30%;
+  }
+
 }

@@ -10,16 +10,19 @@ import { MenuService } from '../shared/services/menu.service';
 })
 export class ShoppingcartComponent implements OnInit {
 
-dishes = this.shoppingcartService.getDishes();
+  dishes = this.shoppingcartService.getDishes();
 
 
   constructor(private shoppingcartService: ShoppingcartService, private menuService: MenuService) { }
 
   ngOnInit(): void {
+
   }
 
-deleteDish(i:number) {
-  this.dishes.splice(i,1);
-}
+  deleteDish(i: number) {
+    this.dishes.splice(i, 1);
+  }
+
+
 
 }

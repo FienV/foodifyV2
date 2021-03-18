@@ -29,23 +29,20 @@
         </div>
         -->
     </div>
+  
     <!-- nr of orders, dish, -/+/ delete buttons, remark, price -->
     <div class="row1">
         <div class="col-md-12">
             <div class="cart-single-meal">
-                <div class="cart-row ">
+                <div class="cart-row " *ngFor="let dish of dishes ; let i = index" >
                     <input type='number' placeholder='Aantal stuks' class="col-md-1 mx-3 cart-meal-amount">
                     <div class="col-md-6 cart-meal-name">
-                        {{dishes | json}}
+                       {{dish.name}}
 
                     </div>
-                    <div class="col-md-3 cart-meal-edit-buttons">
-                        <button *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' class=" btn btn-success cart-meal-edit-comment">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-                    </div>
+                    
                     <div class="col-md-2 cart-meal-price">
-                        dish.price
+                      € {{dish.price}}
                     </div>
 
                 </div><br>
@@ -72,7 +69,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <button type="button" class="btn btn-success btn-add" routerLink="/menu">
+            <button type="button" class="btn btn-success btn-add" routerLink="/menu" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' class=" btn btn-success cart-meal-edit-comment">
                 Product wijzigen
             </button>
             <button type="button" class="btn btn-success btn-pay "   routerLink="/order">
