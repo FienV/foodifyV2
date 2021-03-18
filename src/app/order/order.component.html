@@ -26,9 +26,9 @@
         <table >
             
             
-            <tr *ngFor="let dish of dishes ; let i = index">
+            <tr *ngFor="let dish of dishes ; let i = index" >
                 <td>
-                    amount
+                    {{amount}}
                 </td>
                 <td>
                     {{dish.resto_name}}
@@ -38,7 +38,7 @@
                 </td>
                 
                 <td>
-                   € total
+                   {{amount*dish.price}}
                 </td>
             </tr>
          

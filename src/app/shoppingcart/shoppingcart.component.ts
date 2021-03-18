@@ -9,9 +9,11 @@ import { MenuService } from '../shared/services/menu.service';
   styleUrls: ['./shoppingcart.component.css']
 })
 export class ShoppingcartComponent implements OnInit {
-
+  
+  amount: number = 0;
+  
   dishes = this.shoppingcartService.getDishes();
-
+  
 
   constructor(private shoppingcartService: ShoppingcartService, private menuService: MenuService) { }
 
