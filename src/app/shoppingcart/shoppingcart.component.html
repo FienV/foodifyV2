@@ -4,7 +4,7 @@
     <div class="row header">
         <div class="col-md-12 header">
             <div class="page-header">
-                <button class=foodify-btn routerLink="">
+                <button class=foodify-btn routerLink="" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' >
                     <h1 class="title">
                         foodify
                     </h1>
@@ -15,7 +15,7 @@
     <!--title, info, shoppingcart with count-->
     <div class="row">
         <div class="col-md-12">
-            <button routerLink="/menu" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x"></i></button>
+            <button routerLink="/menu" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' ></i></button>
             <i class="fas fa-shopping-cart fa-2x"></i>
             <h3>
                 Winkelmandje
@@ -24,10 +24,7 @@
                 U wilt:
             </p>
         </div>
-       <!-- <div class="col-md-2 icon">
-            <i class="fas fa-shopping-cart fa-2x"></i>
-        </div>
-        -->
+      
     </div>
   
     <!-- nr of orders, dish, -/+/ delete buttons, remark, price -->
@@ -42,7 +39,7 @@
                     </div>
                     
                     <div class="col-md-2 cart-meal-price">
-                      € {{dish.price}}
+                       {{dish.price}}
                     </div>
 
                 </div><br>
@@ -69,7 +66,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <button type="button" class="btn btn-success btn-add" routerLink="/menu" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' class=" btn btn-success cart-meal-edit-comment">
+            <button type="button" class="btn btn-success btn-add" routerLink="/menu" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' >
                 Product wijzigen
             </button>
             <button type="button" class="btn btn-success btn-pay "   routerLink="/order">

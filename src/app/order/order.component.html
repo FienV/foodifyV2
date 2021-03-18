@@ -26,15 +26,15 @@
         <table >
             
             
-            <tr>
+            <tr *ngFor="let dish of dishes ; let i = index">
                 <td>
                     amount
                 </td>
                 <td>
-                    resto
+                    {{dish.resto_name}}
                 </td>
                 <td>
-                   dishes
+                   {{dish.name}}
                 </td>
                 
                 <td>
