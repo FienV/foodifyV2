@@ -29,6 +29,7 @@
         <div class="col-md-12 menu">
             <div class="card rounded mb-4" *ngFor="let dish of dishes$ | async">
                 <img class="card-img-top" src="assets/{{dish.image}}">
+
                 <table class="card-table my-3 mx-2">
                     <tbody>
                         <tr>
@@ -44,13 +45,32 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- routerLink="/shoppingcart" -->
                 <div class="text-center">
-                    <button (click)="addToShoppingcart(dish,1)" routerLink="/shoppingcart"
-                        class="btn btn-secondary greenbutton mb-3" type="button">
+                    <button (click)="addToShoppingcart(dish,1)" data-bs-toggle="modal" data-bs-target="#Alert" class="btn btn-secondary greenbutton mb-3" type="button">
                         Bestel
                     </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Alert -->
+    <div class="modal fade" id="Alert" tabindex="-1" aria-labelledby="alertLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <i class="fas fa-shopping-cart fa-2x mt-4" style="color: #245846;"></i>
+                <div class="modal-body mt-2">
+                Het menu is toegevoegd aan het winkelmandje!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary greenbutton" routerLink="/shoppingcart" data-bs-dismiss="modal">Ga verder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

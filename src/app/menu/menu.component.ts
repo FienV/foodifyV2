@@ -13,7 +13,7 @@ import { ShoppingcartService } from '../shared/services/shoppingcart.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-dishes$: Observable<any>;
+  dishes$: Observable<any>;
 
   constructor(private menuService: MenuService, private shoppingcartService: ShoppingcartService, private route: ActivatedRoute) {}
 
@@ -23,6 +23,5 @@ dishes$: Observable<any>;
 
   addToShoppingcart(dishes) {
     this.shoppingcartService.addToShoppingcart(dishes);
-    window.alert ('Your product has been added to the cart!')
   }
 }
