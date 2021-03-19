@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { MenuComponent } from './menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { Routes } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { OrderComponent } from './order/order.component';
@@ -36,7 +36,8 @@ import { AffirmationComponent } from './affirmation/affirmation.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
