@@ -31,6 +31,7 @@ import { AffirmationComponent } from './affirmation/affirmation.component';
     AffirmationComponent,
 
 
+
   ],
   imports: [
     BrowserModule,
