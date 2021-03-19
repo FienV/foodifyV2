@@ -136,6 +136,6 @@
 </div>
 
 <button routerLink="/shoppingcart" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x"></i></button>
-<button type="submit" class="btn btn-success btn-pay " routerLink="/payment">
+<button [disabled]="form.invalid" type="submit" class="btn btn-success btn-pay " routerLink="/payment">
     Pay
 </button>
