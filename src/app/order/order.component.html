@@ -11,7 +11,7 @@
             </div>
 
             <h2 class="name">
-               Uw Bestelling
+                Uw Bestelling
             </h2>
         </div>
     </div>
@@ -23,10 +23,10 @@
     </div>
 
     <div class="order table">
-        <table >
-            
-            
-            <tr *ngFor="let dish of dishes ; let i = index" >
+        <table>
+
+
+            <tr *ngFor="let dish of dishes ; let i = index">
                 <td>
                     {{amount}}
                 </td>
@@ -34,16 +34,16 @@
                     {{dish.resto_name}}
                 </td>
                 <td>
-                   {{dish.name}}
+                    {{dish.name}}
                 </td>
-                
+
                 <td>
-                   {{amount*dish.price}}
+                    {{amount*dish.price}}
                 </td>
             </tr>
-         
+
         </table>
-       
+
     </div>
 
     <div class="col-md-12 titels">
@@ -52,41 +52,90 @@
     </div>
 
     <div class="col-md-12  order ">
-        
-            <form>
-                <div>
-
-                    <input type="firstname" placeholder="voornaam">
-                </div>
-                <div>
-
-                    <input type="name" placeholder="naam">
-                </div>
-                <div>
-
-                    <input type="address" placeholder="adres">
-                </div>
-                <div>
+        <form [formGroup]="form" (ngSubmit)="submit()">
 
 
-                    <input type="phonenumber" placeholder="telefoonnummer">
-                </div>
-                <div>
 
-                    <input type="email" placeholder="email">
-                </div>
-                <div>
+            <div class="form-group">
 
-                    <input type="date" placeholder="datum">
+                <label for="name">Voor- en achternaam</label>
+
+                <input formControlName="name" id="name" type="text" class="form-control">
+
+                <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
+
+                    <div *ngIf="f.name.errors.required">Name is required.</div>
+
                 </div>
 
-            </form>
-        
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="address">Adres</label>
+
+                <input formControlName="address" id="address" type="text" class="form-control">
+
+                <div *ngIf="f.address.touched && f.address.invalid" class="alert alert-danger">
+
+                    <div *ngIf="f.address.errors.required">Adres is required.</div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="phone">Telefoonnummer</label>
+
+                <input formControlName="phone" id="phone" type="text" class="form-control">
+
+                <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger">
+
+                    <div *ngIf="f.phone.errors.required">Telefoonnummer is required.</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">Email</label>
+
+                <input formControlName="email" id="email" type="text" class="form-control">
+
+                <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
+
+                    <div *ngIf="f.email.errors.required">Email is required.</div>
+
+                    <div *ngIf="f.email.errors.email">Please, enter valid email address.</div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="date">Datum</label>
+
+                <input formControlName="date" id="date" type="date" class="form-control">
+
+
+                <div *ngIf="f.date.touched && f.date.invalid" class="alert alert-danger">
+
+                    <div *ngIf="f.date.errors.required">Datum is required.</div>
+
+                </div>
+
+            </div>
+        </form>
     </div>
-
 </div>
 
 <button routerLink="/shoppingcart" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x"></i></button>
-<button type="button" class="btn btn-success btn-pay " routerLink="/payment">
-    pay
+<button type="submit" class="btn btn-success btn-pay " routerLink="/payment">
+    Pay
 </button>

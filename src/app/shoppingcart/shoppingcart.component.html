@@ -32,6 +32,7 @@
         <div class="col-md-12">
             <div class="cart-single-meal">
                 <div class="cart-row " *ngFor="let dish of dishes ; let i = index" >
+
                     <input  [(ngModel)]="amount"type='number' placeholder='Aantal stuks' min="1" class="col-md-1 mx-3 cart-meal-amount ">
                     <div class="col-md-6 cart-meal-name">
                        {{dish.name}}
