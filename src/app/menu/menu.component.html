@@ -39,6 +39,9 @@
                         <tr>
                             <td class="menutext restoname" style="font-weight: bold; font-size: 20px;">
                                 {{dish.resto_name}}</td>
+                            <td class="menutext restoname" style="font-weight: bold; font-size: 20px;">
+                                {{dish.resto_name.city_name}}</td>
+
                         </tr>
                         <tr>
                             <td class="menutext dishinhoud ">{{dish.inhoud}}</td>
@@ -47,7 +50,8 @@
                 </table>
                 <!-- routerLink="/shoppingcart" -->
                 <div class="text-center">
-                    <button (click)="addToShoppingcart(dish,1)" data-bs-toggle="modal" data-bs-target="#Alert" class="btn btn-secondary greenbutton mb-3" type="button">
+                    <button (click)="addToShoppingcart(dish,1)" data-bs-toggle="modal" data-bs-target="#Alert"
+                        class="btn btn-secondary greenbutton mb-3" type="button">
                         Bestel
                     </button>
                 </div>
@@ -64,10 +68,11 @@
                 </div>
                 <i class="fas fa-shopping-cart fa-2x mt-4" style="color: #245846;"></i>
                 <div class="modal-body mt-2">
-                Het menu is toegevoegd aan het winkelmandje!
+                    Het menu is toegevoegd aan het winkelmandje!
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary greenbutton" routerLink="/shoppingcart" data-bs-dismiss="modal">Ga verder</button>
+                    <button type="button" class="btn btn-primary greenbutton" routerLink="/shoppingcart"
+                        data-bs-dismiss="modal">Ga verder</button>
                 </div>
             </div>
         </div>

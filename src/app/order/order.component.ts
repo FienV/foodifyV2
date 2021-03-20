@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ShoppingcartService} from '../shared/services/shoppingcart.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+
 import { Observable } from 'rxjs';
 import { Dish } from '../shared/model/menu.model';
 import { HttpClient } from '@angular/common/http';
@@ -17,6 +18,9 @@ import { tap } from 'rxjs/operators';
 export class OrderComponent implements OnInit {
 
   dishes = this.shoppingcartService.getDishes();
+
+  dishtotal:any;
+
   form = new FormGroup({
 
     name: new FormControl('', [Validators.required]),
@@ -35,12 +39,12 @@ export class OrderComponent implements OnInit {
   constructor(private shoppingcartService: ShoppingcartService) { }
 
   ngOnInit(): void {
-    
+    this.dishtotal = localStorage.getItem('amount')
   }
+
   get f(){
     return this.form.controls;
   }
-
 
   submit(){
     console.log(this.form.value);

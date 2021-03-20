@@ -70,7 +70,7 @@
             <button type="button" class="btn btn-success btn-add" routerLink="/menu" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' >
                 Product wijzigen
             </button>
-            <button type="button" class="btn btn-success btn-pay "   routerLink="/order">
+            <button type="button" class="btn btn-success btn-pay "   (click)="goToOrder()">
                 Verder naar bestellen
             </button>
         </div>

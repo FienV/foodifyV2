@@ -28,17 +28,17 @@
 
             <tr *ngFor="let dish of dishes ; let i = index">
                 <td>
-                    {{amount}}
-                </td>
-                <td>
-                    {{dish.resto_name}}
+                    {{dishtotal}} x 
                 </td>
                 <td>
                     {{dish.name}}
                 </td>
+                <td>
+                   van  {{dish.resto_name}} 
+                </td>
 
                 <td>
-                    {{amount*dish.price}}
+                  Totaal € {{dishtotal * dish.price}}
                 </td>
             </tr>
 
