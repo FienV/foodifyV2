@@ -21,19 +21,20 @@ body {
  }
  
  .foodify-btn{
-     background-color: #245846;
-     border-radius: 20px;
-     border: none;
-     padding: 10px;
-     text-align: center;
-     margin-top:20px;
-     margin-right: 10px;
- }
+    background-color: transparent;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    margin-top:20px;
+    margin-right: 10px;
+    position: fixed;
+}
 
  .title {
      text-align: center; 
-     color: white;
-     font-weight: bold;
+     color: black;
+     font-weight: lighter;
  }
  
  .name {
@@ -110,7 +111,6 @@ body {
      width: 20%;
      margin-right:15px;
      float: left;
- 
  }
  
  .cart-meal-price {
@@ -135,15 +135,14 @@ body {
  }
  
  .sum {
-     border-style:solid;
-     border-width:2px;
-     border-color:#245846;
-     border-radius: 20px;
-     margin:auto;
-     width:98%;
-     padding: 10px 20px;
- 
- }
+    border-style:solid;
+    border-width:2px;
+    border-color: #895b49;
+    border-radius: 20px;
+    margin:auto;
+    width:98%;
+    padding: 10px 20px;
+}
  
  .cart-sum-price { 
      float:right;
@@ -153,10 +152,12 @@ body {
  .cart-row {
      margin-bottom: 10px;
  }
+ 
  .total {
-     color: black;
-     font-weight: bold;
- }
+    color: #245846;
+    font-weight: bold;
+    font-size: 16pt;
+}
 
  .fa-chevron-circle-left{
     margin-top: 10px;

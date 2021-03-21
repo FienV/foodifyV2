@@ -9,19 +9,20 @@
 }
 
 .foodify-btn{
-   background-color: #245846;
-   border-radius: 20px;
-   border: none;
-   padding: 10px;
-   text-align: center;
-   margin-top:20px;
-   margin-right: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  margin-top:20px;
+  margin-right: 10px;
+  opacity: 0.8;
 }
 
 .title {
    text-align: center; 
-   color: white;
-   font-weight: bold;
+   color: black;
+   font-weight: lighter;
 }
 
 .name {
@@ -64,6 +65,11 @@
   font-size: 18px;
   padding-left: 14px;
   vertical-align: top;
+  color: #896b49;
+}
+
+.dishinhoud {
+  color: black;
 }
 
 .bold {
@@ -85,6 +91,7 @@
 
 .h1 {
   font-size: 18px;
+  font-weight: lighter;
 }
 
 /* alert */

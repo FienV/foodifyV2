@@ -1,57 +1,67 @@
 .header {
     
-    background-color: #245846;
-    background-image: url("header.jpeg");
-    background-size: cover;
-    height: 250px;
-    opacity: 0.88;
-    
-  }
-  
-  .foodify-btn{
-     background-color: #245846;
-     border-radius: 20px;
-     border: none;
-     padding: 10px;
-     text-align: center;
-     margin-top:20px;
-     margin-right: 10px;
-  }
-  
-  .title {
-     text-align: center; 
-     color: white;
-     font-weight: bold;
-  }
-  
-  .name {
-     padding-top:30px;
-     text-align: center;
-     padding-bottom: 40px;
-     color: white;
-  }
-  
-  
-  
-  
-  .fa-shopping-cart{
-    color: white;
-    margin-top: 10px;
-    
-  }
-  
-  .btn {
-    background-color: #245846;
-    margin-top: 10px;
-    margin-right: 3%;
-    float: right;
-    padding: 5px 10px;
+   background-color: #245846;
+   background-image: url("header.jpeg");
+   background-size: cover;
+   height: 1000px;
+   opacity: 0.88;
+   
+ }
+ 
+ .foodify-btn{
+    background-color: transparent;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
     text-align: center;
-  
-  }
+    margin-top:20px;
+    margin-right: 10px;
+ }
+ 
+ .title {
+    text-align: center; 
+    color: black;
+    font-weight: lighter;
+ }
+ 
+ .name {
+    padding-top:30px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: white;
+ }
+ 
+ .fa-shopping-cart{
+   color: white;
+   margin-top: 10px;
+   
+ }
+ 
+ .btn {
+   background-color: #245846;
+   margin-top: 10px;
+   margin-right: 3%;
+   float: right;
+   padding: 5px 10px;
+   text-align: center;
+ }
 
-  .message {
-     text-align: center;
-     margin-top: 130px;
-  }
-  
+ .card {
+    background-color: #245846;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    position: center;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16pt;
+ }
+
+ .card-img-top {
+    height: 300px;
+    width: 200px;
+    size: 50px;
+    border-radius: 20px;
+    margin: auto;
+ }

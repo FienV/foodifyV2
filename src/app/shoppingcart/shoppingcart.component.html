@@ -9,6 +9,9 @@
                         foodify
                     </h1>
                 </button>
+                <h2 class="name">
+                    Winkelmandje
+                 </h2>
             </div>
         </div>
     </div>
@@ -18,10 +21,10 @@
             <button routerLink="/menu" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' ></i></button>
             <i class="fas fa-shopping-cart fa-2x"></i>
             <h3>
-                Winkelmandje
+                Jouw winkelmandje:
             </h3>
             <p>
-                U wilt:
+                Jouw items:
             </p>
         </div>
       
