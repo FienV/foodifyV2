@@ -10,7 +10,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class ShoppingcartComponent implements OnInit {
   
-  amount: any = 0;
+  amount: any = 1;
   
   dishes = this.shoppingcartService.getDishes();
   
