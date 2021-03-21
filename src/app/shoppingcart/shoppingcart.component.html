@@ -9,16 +9,16 @@
                         foodify
                     </h1>
                 </button>
-                <h2 class="name">
-                    Winkelmandje
-                 </h2>
             </div>
+            <h2 class="name">
+                Winkelmandje
+             </h2>
         </div>
     </div>
     <!--title, info, shoppingcart with count-->
     <div class="row">
         <div class="col-md-12">
-            <button routerLink="/menu" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x" *ngFor="let dish of dishes ; let i = index" (click)='deleteDish(i)' ></i></button>
+            
             <i class="fas fa-shopping-cart fa-2x"></i>
             <h3>
                 Jouw winkelmandje:
@@ -36,7 +36,8 @@
             <div class="cart-single-meal">
                 <div class="cart-row " *ngFor="let dish of dishes ; let i = index" >
 
-                    <input [(ngModel)]="amount" type='number' placeholder='Aantal stuks' required min="1" class="col-md-1 mx-3 cart-meal-amount">
+                    <input [(ngModel)]="amount" type='number' placeholder='1' required min="1" class="col-md-1 mx-3 cart-meal-amount ">
+
                     <div class="col-md-6 cart-meal-name">
                        {{dish.name}}
 

@@ -58,6 +58,7 @@
 
 .rounded {
   border-radius: 1rem !important;
+  border-color: #896b49;
 }
 
 .menutext {   
@@ -97,7 +98,7 @@
 /* alert */
 
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .menu {
     width:100%;
     margin-left:0px;
