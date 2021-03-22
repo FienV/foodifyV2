@@ -3,7 +3,7 @@
     <div class="row header">
         <div class="col-md-12 header">
             <div class="page-header">
-                <button class=foodify-btn >
+                <button class=foodify-btn>
                     <h1 class="title">
                         foodify
                     </h1>
@@ -13,9 +13,11 @@
             <!--  Order confirmation -->
                 <div class="row">
                         <div class="card" style="width: 25rem;">
-                            <div class="card-body">
-                              <h2 class="card-title">Dag!</h2>
-                              <p class="card-text">Bedankt voor je bestelling! <br> Wij komen jouw kant op!</p>
+                            <div class="card-body" *ngFor="let dish of dishes ; let i = index">
+                              <h2 class="card-title">Dag, {{clientName}} !</h2><br>
+                              <p class="card-text">Bedankt voor je bestelling! <br> 
+                                U heeft {{dishtotal}}x {{dish.name}} besteld voor een totaalprijs van € {{dishtotal * dish.price }}. <br>
+                                Wij zullen je bestelling leveren op {{date}}!</p>
                             </div>
                         </div>
             </div>

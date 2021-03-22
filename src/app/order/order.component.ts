@@ -20,6 +20,8 @@ export class OrderComponent implements OnInit {
   dishes = this.shoppingcartService.getDishes();
 
   dishtotal:any;
+  name:any;
+  date:any;
 
   form = new FormGroup({
 
@@ -49,5 +51,9 @@ export class OrderComponent implements OnInit {
   submit(){
     console.log(this.form.value);
   }
-
+  
+  storelocal() {
+    localStorage.setItem('name', this.name);
+    localStorage.setItem('date', this.date);
+  }
 }

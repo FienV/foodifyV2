@@ -1,7 +1,7 @@
 .header {
     
     background-color: #245846;
-    background-image: url("header.jpeg");
+    background-image: url("header.jpg");
     background-size: cover;
     height: 250px;
     opacity: 0.88;
@@ -20,8 +20,8 @@
   
   .title {
      text-align: center; 
-     color: black;
-     font-weight: lighter;
+     color: white;
+     font-weight: 300;
   }
   
   .name {
@@ -96,13 +96,16 @@ td {
    border:none;
    padding: 5px;
    font-weight: 200;
-   width: 25%;
+   width: 30%;
 
 }
 
+.dishtotal {
+   width: 10%;
+}
 .titels {
-   margin-top: 2px;
-   margin-bottom: 2px;
+   margin-top: 20px;
+   margin-bottom: 20px;
    font-size: 18pt;
    font-weight: lighter;
 }

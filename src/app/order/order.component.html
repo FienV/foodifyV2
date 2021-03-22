@@ -11,7 +11,7 @@
             </div>
 
             <h2 class="name">
-                Jouw Bestelling
+                Jouw bestelling
             </h2>
         </div>
     </div>
@@ -27,18 +27,18 @@
 
 
             <tr *ngFor="let dish of dishes ; let i = index">
-                <td>
+                <td class="dishtotal">
                     {{dishtotal}} x 
                 </td>
-                <td>
+                <td class="dishname">
                     {{dish.name}}
                 </td>
-                <td>
-                   van  {{dish.resto_name}} 
+                <td class="resto">
+                   {{dish.resto_name}} 
                 </td>
 
-                <td>
-                  Totaal € {{dishtotal * dish.price}}
+                <td class="price">
+                  Totaal <br> € {{dishtotal * dish.price}}
                 </td>
             </tr>
 
@@ -59,11 +59,11 @@
 
                 <label for="name">Voor- en achternaam</label>
 
-                <input formControlName="name" id="name" type="text" class="form-control">
+                <input formControlName="name" id="name" type="text" class="form-control"  [(ngModel)]="name">
 
                 <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
 
-                    <div *ngIf="f.name.errors.required">Name is required.</div>
+                    <div *ngIf="f.name.errors.required">Verplicht veld</div>
 
                 </div>
 
@@ -78,7 +78,7 @@
 
                 <div *ngIf="f.address.touched && f.address.invalid" class="alert alert-danger">
 
-                    <div *ngIf="f.address.errors.required">Adres is required.</div>
+                    <div *ngIf="f.address.errors.required">Verplicht veld</div>
                 </div>
 
             </div>
@@ -91,7 +91,7 @@
 
                 <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger">
 
-                    <div *ngIf="f.phone.errors.required">Telefoonnummer is required.</div>
+                    <div *ngIf="f.phone.errors.required">Verplicht veld</div>
 
                 </div>
 
@@ -106,9 +106,9 @@
 
                 <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
 
-                    <div *ngIf="f.email.errors.required">Email is required.</div>
+                    <div *ngIf="f.email.errors.required">Verplicht veld</div>
 
-                    <div *ngIf="f.email.errors.email">Please, enter valid email address.</div>
+                    <div *ngIf="f.email.errors.email">Vul een geldig emailadres in</div>
 
                 </div>
 
@@ -118,14 +118,14 @@
 
             <div class="form-group">
 
-                <label for="date">Datum</label>
+                <label for="date" >Datum</label>
 
-                <input formControlName="date" id="date" type="date" class="form-control">
+                <input formControlName="date" id="date" type="date" class="form-control"[(ngModel)]="date">
 
 
                 <div *ngIf="f.date.touched && f.date.invalid" class="alert alert-danger">
 
-                    <div *ngIf="f.date.errors.required">Datum is required.</div>
+                    <div *ngIf="f.date.errors.required">Verplicht veld</div>
 
                 </div>
 
@@ -135,6 +135,6 @@
 </div>
 
 <button routerLink="/shoppingcart" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x"></i></button>
-<button [disabled]="form.invalid" type="submit" class="btn btn-success btn-pay " routerLink="/payment">
-    Pay
+<button [disabled]="form.invalid" type="submit" class="btn btn-success btn-pay " routerLink="/payment" (click)="storelocal()">
+    Betaal
 </button>

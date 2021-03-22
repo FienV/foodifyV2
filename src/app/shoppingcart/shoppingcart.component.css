@@ -13,7 +13,7 @@ body {
 .header {
     
     background-color: #245846;
-    background-image: url("header.jpeg");
+    background-image: url("header.jpg");
     background-size: cover;
     height: 250px;
     opacity: 0.88;
@@ -89,13 +89,6 @@ body {
      
  }
  
- .icon {
-     margin-top: 30px;
-     padding-right: 40px;
-     text-align: right;
-     float: right;
- }
- 
  .cart-meal-amount {
      
      margin-left: 20px;
@@ -107,31 +100,13 @@ body {
      width: 30%;
      float: left;
  }
- .cart-meal-edit-buttons {
-     width: 20%;
-     margin-right:15px;
-     float: left;
- }
+
  
  .cart-meal-price {
      float: right;
      text-align:right;
      width:10%;
      margin-right: 20px;
- }
- 
- .row1 {
-    
-     padding: 20px 0px;
-     margin-bottom: 20px
- }
- 
- .cart-meal-extra {
-     float: none;
-     
-     font-size: 14px;
-     font-style: italic;
-     color: rgb(73, 73, 73);
  }
  
  .sum {
@@ -152,100 +127,39 @@ body {
  .cart-row {
      margin-bottom: 10px;
  }
- 
- .total {
-    color: #245846;
-    font-weight: bold;
-    font-size: 16pt;
-}
-
- .fa-chevron-circle-left{
-    margin-top: 10px;
-    color: #245846;
- }
- .back-btn {
-     border:none;
-     background-color: white;
-     color:none;
- }
-
- .fa-shopping-cart{
-    color: #245846;
-    float: right;
-    margin-top: 10px;
-    margin-right: 5%;
-    
- }
-  
-@media only screen and (max-width:768px) {
-     
-     .cart-meal-edit-buttons{
-         float:none;
-         width:80%; 
-     }
-     
-     .cart-meal-extra{
-         float: none;
-         width:100%;
-         margin-top: 10px;
-         margin-left: 20px;
-     }
- 
-     .btn {
-         width: 10%;
-         padding: 0px;
-         
-     }
-     .bi-cart2 {
-         float: right;
-         margin-right: -10px;
-        
-     }
-     .icon {
-         margin-top:-74px;
-     }
- 
-     .row1 {
-         margin-bottom: 0px
-     }
- 
-     .btn-pay {
-         width:30%;
-         ;
-         min-height: 60px;
-         
-     }
-     .btn-add {
-         width:30%;
-         
-         min-height: 60px;
-     }
-     .col- {
-         width: 100%;
-     }
-     
+ .row{
+    margin-top:20px;
 }
  
-@media only screen and (max-width:415px) {
-    .cart-meal-name{
-       min-width: 70%;
-       margin-right: 2px;
+@media (max-width:600px) {
+    .name{
+        margin-top: 160px;
     }
-     .cart-meal-edit-buttons {
-        float:left;
-        margin-left:20%;
-        margin-right:20%;
-        margin-top: 20px;
-        padding: 10px 20px;
+    .header{
+        margin-top:0px;
+    }
+    .cart-meal-amount {
+        width:10%;
+   }
+
+   
+    .cart-meal-name {
+        width: 58%;
+    }
+
+    .cart-meal-price{
+        width: 12%;        
+    }
+
+   
+    
+    .btn-pay {
+        width:40%;
+        min-height: 60px;
         
- 
-     }
-     .cart-meal-price{
-         float: right;
-         margin-left: 10px;
-         margin-right: 20px;
-         
- 
-     }
- }
- 
+    }
+    .btn-add {
+        width:40%;        
+        min-height: 60px;
+    }
+}

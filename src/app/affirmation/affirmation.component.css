@@ -1,13 +1,15 @@
-.header {
-    
-   background-color: #245846;
-   background-image: url("header.jpeg");
+
+.container-fluid {
+   margin:none;
+   background-image: url("affirmation.jpg");
+   height:100%;
+   background-position: center;
+   background-repeat: no-repeat;
    background-size: cover;
-   height: 1000px;
-   opacity: 0.88;
-   
- }
- 
+
+}
+
+
  .foodify-btn{
     background-color: transparent;
     border-radius: 20px;
@@ -20,31 +22,12 @@
  
  .title {
     text-align: center; 
-    color: black;
-    font-weight: lighter;
- }
- 
- .name {
-    padding-top:30px;
-    text-align: center;
-    padding-bottom: 40px;
     color: white;
+    font-weight: 300;
  }
  
- .fa-shopping-cart{
-   color: white;
-   margin-top: 10px;
-   
- }
  
- .btn {
-   background-color: #245846;
-   margin-top: 10px;
-   margin-right: 3%;
-   float: right;
-   padding: 5px 10px;
-   text-align: center;
- }
+ 
 
  .card {
     background-color: #245846;
@@ -66,9 +49,4 @@
     margin: auto;
  }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
+

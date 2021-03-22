@@ -30,6 +30,6 @@ export class ShoppingcartComponent implements OnInit {
     this.route.navigateByUrl("/order");
   }
 
-
+ 
 
 }
