@@ -4,7 +4,7 @@
     background-image: url("header.jpg");
     background-size: cover;
     height: 250px;
-    opacity: 0.88;
+    opacity: 1;
     
   }
   
@@ -19,17 +19,21 @@
 }
   
   .title {
-     text-align: center; 
-     color: black;
-     font-weight: lighter;
-  }
+   text-align: center;
+   font-weight: 300;
+   font-size: 40px;
+   color: white;
+   background: transparent;
+   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.titels {
+   margin-top: 20px;
+   margin-bottom: 20px;   
+   font-weight: 300;
+   font-size: 28px
+}
   
-  .name {
-     padding-top:30px;
-     text-align: center;
-     padding-bottom: 40px;
-     color: white;
-  }
 
   .fa-shopping-cart{
     color: white;

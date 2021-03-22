@@ -21,32 +21,44 @@
  }
  
  .title {
-    text-align: center; 
-    color: white;
-    font-weight: 300;
+   text-align: center;
+   font-weight: 300;
+   font-size: 40px;
+   color: white;
+   background: transparent;
+   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
  }
- 
- 
- 
+  
 
  .card {
     background-color: #245846;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 20%;
     position: center;
     color: white;
     border-radius: 20px;
     text-align: center;
-    font-size: 16pt;
- }
+    font-size: 20px;
+    font-weight: 300;
+    width: 60%;
+    
 
+ }
+/*
  .card-img-top {
     height: 300px;
     width: 200px;
-    size: 50px;
+    size: 50%;
     border-radius: 20px;
     margin: auto;
+ }*/
+
+ @media (max-width:600px) {
+   .card{
+      margin-top: 40%;
+      width: 80%;
+   }
  }
 
 

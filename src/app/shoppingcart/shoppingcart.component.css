@@ -16,11 +16,11 @@ body {
     background-image: url("header.jpg");
     background-size: cover;
     height: 250px;
-    opacity: 0.88;
+    opacity: 1;
     
- }
+}
  
- .foodify-btn{
+.foodify-btn{
     background-color: transparent;
     border-radius: 20px;
     border: none;
@@ -31,85 +31,77 @@ body {
     position: fixed;
 }
 
- .title {
-     text-align: center; 
-     color: black;
-     font-weight: lighter;
- }
+.title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+    background: transparent;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
  
- .name {
-     padding-top:30px;
-     text-align: center;
-     padding-bottom: 40px;
-     color: white;
- }
+.titels {
+    font-weight: 300;
+    font-size: 30px
+}
  
- h3 {
-     padding-left: 20px;
-     padding-top: 30px;
- }
+h3 {
+    padding-left: 20px;
+    padding-top: 30px;
+}
  
- p{
-     padding-left: 20px;
- }
+p{
+    padding-left: 20px;
+}
  
- .btn {
-     background-color: #245846 ;
-     color: white;
-     border-radius: 20px;
-     border-color:#245846;
-     margin-left:10px;
-     float: left;
-     width: 29%;
-    
-     
- }
+.btn {
+    background-color: #245846 ;
+    color: white;
+    border-radius: 20px;
+    border-color:#245846;
+    margin-left:10px;
+    float: left;
+    width: 29%;
+}
  
- .btn:hover {
-     background-color: white;
-     color:#245846
- }
- .btn-pay {
-     float: right;
-     /* margin-right: 10px;
-     margin-top: 20px; */
-     margin:auto;
-     width:30%;
-     margin-top: 20px;
-     padding: 10px;
- }
- .btn-add {
-     float: left;
-     /* margin-right: 10px;
-     margin-top: 20px; */
-     margin:auto;
-     width:30%;
-     margin-top: 20px;
-     padding: 10px;
-     
- }
+.btn:hover {
+    background-color: white;
+    color:#245846
+}
+.btn-pay {
+    float: right;
+    margin:auto;
+    width:30%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.btn-add {
+    float: left;
+    margin:auto;
+    width:30%;
+    margin-top: 20px;
+    padding: 10px;
+}
  
- .cart-meal-amount {
-     
-     margin-left: 20px;
-     width:10%;
-     float: left;
- } 
- .cart-meal-name {
-     margin-right:15px;
-     width: 30%;
-     float: left;
- }
+.cart-meal-amount {
+    margin-left: 20px;
+    width:10%;
+    float: left;
+} 
+.cart-meal-name {
+    margin-right:15px;
+    width: 30%;
+    float: left;
+}
 
+.cart-meal-price {
+    float: right;
+    text-align:right;
+    width:10%;
+    margin-right: 20px;
+}
  
- .cart-meal-price {
-     float: right;
-     text-align:right;
-     width:10%;
-     margin-right: 20px;
- }
- 
- .sum {
+.sum {
     border-style:solid;
     border-width:2px;
     border-color: #895b49;
@@ -119,40 +111,30 @@ body {
     padding: 10px 20px;
 }
  
- .cart-sum-price { 
-     float:right;
-     
- }
+.cart-sum-price { 
+    float:right;     
+}
  
- .cart-row {
-     margin-bottom: 10px;
- }
- .row{
+.cart-row {
+    margin-bottom: 10px;
+}
+.row{
     margin-top:20px;
 }
  
 @media (max-width:600px) {
-    .name{
-        margin-top: 160px;
-    }
     .header{
         margin-top:0px;
     }
     .cart-meal-amount {
         width:10%;
-   }
-
-   
+    }
     .cart-meal-name {
         width: 58%;
     }
-
     .cart-meal-price{
         width: 12%;        
-    }
-
-   
-    
+    } 
     .btn-pay {
         width:40%;
         min-height: 60px;

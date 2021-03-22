@@ -4,7 +4,7 @@
   background-image: url("header.jpg");
   background-size: cover;
   height: 250px;
-  opacity: 0.88;
+  opacity: 1;
   
 }
 
@@ -16,21 +16,23 @@
   text-align: center;
   margin-top:20px;
   margin-right: 10px;
-  opacity: 0.8;
+ 
 }
 
 .title {
-   text-align: center; 
-   color: black;
-   font-weight: lighter;
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
 
-.name {
-   padding-top:30px;
-   text-align: center;
-   padding-bottom: 40px;
-   color: white;
+.titels {
+  font-weight: 300;
+  font-size: 30px
 }
+
 
 .greenbutton {
   background-color: #245846;
@@ -45,6 +47,9 @@
   color:#245846 
 }
 
+.page{
+  margin-top: 20px;
+}
 
 
 .sbtn {

@@ -1,14 +1,12 @@
 .header {
     
-    background-color: #245846;
-    background-image: url("header.jpg");
-    background-size: cover;
-    height: 250px;
-    opacity: 0.88;
-    
-  }
-  
-  .foodify-btn{
+   background-color: #245846;
+   background-image: url("header.jpg");
+   background-size: cover;
+   height: 250px;
+   opacity: 1; 
+}
+.foodify-btn{
    background-color: transparent;
    border-radius: 20px;
    border: none;
@@ -18,25 +16,21 @@
    margin-right: 10px;
 }
   
-  .title {
-     text-align: center; 
-     color: white;
-     font-weight: 300;
-  }
+.title {
+   text-align: center;
+   font-weight: 300;
+   font-size: 40px;
+   color: white;
+   background: transparent;
+   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
   
-  .name {
-     padding-top:30px;
-     text-align: center;
-     padding-bottom: 40px;
-     color: white;
-  }
+.fa-shopping-cart{
+   color: white;
+   margin-top: 10px;  
+}
   
-  .fa-shopping-cart{
-    color: white;
-    margin-top: 10px;  
-  }
-  
-   .btn {
+.btn {
    background-color: #245846;
    margin-top: 10px;
    margin-right: 3%;
@@ -44,7 +38,7 @@
    padding: 5px 10px;
    text-align: center;
    border-radius: 20px;
- }
+}
   
 .fa-chevron-circle-left{
    margin-top: 10px;
@@ -105,14 +99,14 @@ td {
 }
 .titels {
    margin-top: 20px;
-   margin-bottom: 20px;
-   font-size: 18pt;
-   font-weight: lighter;
+   margin-bottom: 20px;   
+   font-weight: 300;
+   font-size: 28px
 }
 
 
 
- @media (min-width:768px) {
+@media (min-width:768px) {
    .order {
       padding: 40px;
    }
