@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { Routes } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { OrderComponent } from './order/order.component';
 import { PaymentComponent } from './payment/payment.component';

@@ -1,9 +1,9 @@
-<!--Header with the title, name of the restorant and a menu-->
+<!--Header with the title-->
 <div class="container-fluid">
     <div class="row header">
         <div class="col-md-12 header">
             <div class="page-header">
-                <button class=foodify-btn >
+                <button class=foodify-btn>
                     <h1 class="title">
                         foodify
                     </h1>
@@ -12,7 +12,7 @@
         </div>
     </div>
 
-
+    <!--your order-->
 
     <div class="col-md-12 titels ">
         Jouw bestelling:
@@ -24,24 +24,24 @@
 
             <tr *ngFor="let dish of dishes ; let i = index">
                 <td class="dishtotal">
-                    {{dishtotal}} x 
+                    {{dishtotal}} x
                 </td>
                 <td class="dishname">
                     {{dish.name}}
                 </td>
                 <td class="resto">
-                   {{dish.resto_name}} 
+                    {{dish.resto_name}}
                 </td>
 
                 <td class="price">
-                  Totaal <br> € {{dishtotal * dish.price}}
+                    Totaal <br> € {{dishtotal * dish.price}}
                 </td>
             </tr>
 
         </table>
 
     </div>
-
+    <!--contact information form with validation -->
     <div class="col-md-12 titels">
         Jouw contactgegevens:
     </div>
@@ -55,7 +55,7 @@
 
                 <label for="name">Voor- en achternaam</label>
 
-                <input formControlName="name" id="name" type="text" class="form-control"  [(ngModel)]="name">
+                <input formControlName="name" id="name" type="text" class="form-control" [(ngModel)]="name">
 
                 <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
 
@@ -114,9 +114,9 @@
 
             <div class="form-group">
 
-                <label for="date" >Datum</label>
+                <label for="date">Datum</label>
 
-                <input formControlName="date" id="date" type="date" class="form-control"[(ngModel)]="date">
+                <input formControlName="date" id="date" type="date" class="form-control" [(ngModel)]="date">
 
 
                 <div *ngIf="f.date.touched && f.date.invalid" class="alert alert-danger">
@@ -129,8 +129,10 @@
         </form>
     </div>
 </div>
+<!--buttons to go back or pay -->
 
 <button routerLink="/shoppingcart" class="back-btn"><i class="fas fa-chevron-circle-left fa-2x"></i></button>
-<button [disabled]="form.invalid" type="submit" class="btn btn-success btn-pay " routerLink="/payment" (click)="storelocal()">
+<button [disabled]="form.invalid" type="submit" class="btn btn-success btn-pay " routerLink="/payment"
+    (click)="storelocal()">
     Betaal
 </button>

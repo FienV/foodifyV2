@@ -1,11 +1,9 @@
 .header {
-    
   background-color: #245846;
   background-image: url("header.jpg");
   background-size: cover;
   height: 250px;
   opacity: 1;
-  
 }
 
 .foodify-btn{
@@ -105,6 +103,8 @@
   border-top-right-radius: calc(1rem - 1px) !important;
 }
 
+
+/*responsive*/
 
 @media (max-width: 768px) {
   .menu {
