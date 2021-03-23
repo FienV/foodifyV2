@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-
+/*Header*/
 .header {
     
     background-color: #245846;
@@ -39,7 +39,7 @@ body {
     background: transparent;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
- 
+ /*body */
 .titels {
     font-weight: 300;
     font-size: 30px
@@ -121,6 +121,8 @@ p{
 .row{
     margin-top:20px;
 }
+
+/*responsive*/
  
 @media (max-width:600px) {
     .header{

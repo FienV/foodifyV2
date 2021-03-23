@@ -1,78 +1,73 @@
+/*Header */
 .header {
+  background-color: #245846;
+  background-image: url("header.jpg");
+  background-size: cover;
+  height: 250px;
+  opacity: 1;
     
-    background-color: #245846;
-    background-image: url("header.jpg");
-    background-size: cover;
-    height: 250px;
-    opacity: 1;
-    
-  }
-  
-  .foodify-btn{
-   background-color: transparent;
-   border-radius: 20px;
-   border: none;
-   padding: 10px;
-   text-align: center;
-   margin-top:20px;
-   margin-right: 10px;
 }
   
-  .title {
-   text-align: center;
-   font-weight: 300;
-   font-size: 40px;
-   color: white;
-   background: transparent;
-   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+.foodify-btn{
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  margin-top:20px;
+  margin-right: 10px;
+}
+  
+.title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
 
 .titels {
-   margin-top: 20px;
-   margin-bottom: 20px;   
-   font-weight: 300;
-   font-size: 28px
+  margin-top: 20px;
+  margin-bottom: 20px;   
+  font-weight: 300;
+  font-size: 28px
 }
   
 
-  .fa-shopping-cart{
-    color: white;
-    margin-top: 10px;
-    
-  }
+.btn {
+  background-color: #245846;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 3%;
+  padding: 10px 10px;
+  text-align: center;
+  width: 40%;
+}
   
-  .btn {
-   background-color: #245846;
-   border-radius: 10px;
-   margin-top: 10px;
-   margin-right: 3%;
-   padding: 10px 10px;
-   text-align: center;
-   width: 40%;
- }
-  
-  .button{
-   text-align: center;
-  }
+.button{
+  text-align: center;
+}
 
 .fa-chevron-circle-left{
-   margin-top: 10px;
-   color: #245846;
+  margin-top: 10px;
+  color: #245846;
 }
+
 .back-btn {
-    border:none;
-    background-color: white;
-    color:none;
+  border:none;
+  background-color: white;
+  color:none;
 }
 
 .fa-2x {
-   padding-top: 20px !important;
-   padding-bottom: 20px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 
+/* For mobile phones: */
 @media only screen and (max-width: 768px) {
-   /* For mobile phones: */
-   [class*="col-"] {
+  [class*="col-"] {
      width: 100%;
-   }
+  }
  }

@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../shared/services/menu.service';
 import { Observable } from 'rxjs';
-import { Dish } from '../shared/model/menu.model';
-import { HttpClient } from '@angular/common/http';
-import { tap } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
 import { ShoppingcartService } from '../shared/services/shoppingcart.service';
 
